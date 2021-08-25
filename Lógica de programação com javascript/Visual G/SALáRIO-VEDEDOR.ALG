@@ -19,5 +19,5 @@ leia (VV)
 escreva ("Digite o valor recebido por carro vendido em reais: ")
 leia (VCV)
 SFin <- Sfix + (NC * VCV) + (VV * 5 / 100)
-Escreva ("O salário final do vendedor será de: R$:", SFin)
+Escreva ("O salário final do vendedor será de: R$:", SFin:0:2)
 Fimalgoritmo
