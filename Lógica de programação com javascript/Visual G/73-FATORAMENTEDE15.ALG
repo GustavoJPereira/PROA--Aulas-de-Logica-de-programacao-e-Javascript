@@ -6,7 +6,7 @@ Algoritmo "73-fatoramentede15"
 // Data atual  : 03/09/2021
 Var
    // Seção de Declarações das variáveis
-   cont, cont2, total, v1, v2: inteiro
+   cont, total, v1, v2: inteiro
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
    repita
