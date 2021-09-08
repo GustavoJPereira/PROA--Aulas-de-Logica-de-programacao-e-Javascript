@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Exercício 10 da Aula de Javascript">
+    <meta name="keywords" content="Javascript, Aula">
+    <meta name="author" content="Gustavo José Pereira">
+    <title>Décimo Código Javascript</title>
+
+</head>
+
+<body>
+
+    <h2>Javascript no corpo da página</h2>
+
+    <p id="demo">Um parágrafo</p>
+
+    <button type="button" onclick="funcao()">clique</button>
+
+    <script>
+        function funcao() {
+            document.getElementById("demo").innerHTML = "Parágrafo do script";
+        }
+    </script>
+
+</body>
+
+</html>
