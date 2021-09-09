@@ -1,21 +1,18 @@
 Algoritmo "61-tabuleir"
-// Disciplina  :  [Lógica de Programação e Javascript] 
-// Professor   : Jailson Costa dos Santos 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
+// Disciplina  :  [Lógica de Programação e Javascript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Elaborar um programa que efetue o cálculo e no final apresente o somatório do número de grãos de trigo que se pode obter num tabuleiro de xadrez, obedecendo à seguinte regra: colocar um grão de trigo no primeiro quadro e nos quadros seguintes o dobro do quadro anterior
+// Autor(a)    : Gustavo José Pereira
 // Data atual  : 01/09/2021
 Var
-// Seção de Declarações das variáveis 
-   n, t, cont: real
+   // Seção de Declarações das variáveis
+   cont, resultado: real
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
-   n <- 2
-   t <- 1
+   // Seção de Comandos, procedimento, funções, operadores, etc...
    repita
-   t <- t + n
-   n <- n * 2
-   cont <- cont + 1
-   ate cont > 63
-   escreva ("O total de grãos de trigo será", t)
+      resultado <- 2^cont - 1
+      cont <- cont +1
+   ate cont >= 64
+   escreval (resultado)
 Fimalgoritmo
