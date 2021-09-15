@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Exercício 16 da Apostila Mar2007">
+    <meta name="keywords" content="Javascript, Aula, mar2007">
+    <meta name="author" content="Gustavo José Pereira">
+
+    <title>Preço de maçãs</title>
+
+</head>
+
+<body>
+
+    <script>
+        var macas = parseFloat(prompt("Digite a quantidade de maças que deseja comprar"));
+        
+        if (macas >= 12) {
+            alert("O preco de " + macas + " Maçãs é de R$:" + (macas * 1.00).toFixed(2));
+        } else {
+            alert("O preco de " + macas + " Maçãs é de R$:" + (macas * 1.30).toFixed(2));
+        }
+    </script>
+
+    <!-- As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se forem
+compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e
+escreva o custo total da compra.  -->
+
+</body>
+
+</html>
