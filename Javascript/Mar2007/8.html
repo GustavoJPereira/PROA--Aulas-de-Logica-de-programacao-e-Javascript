@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Exercício 8 da Apostila Mar2007">
+    <meta name="keywords" content="Javascript, Aula, mar2007">
+    <meta name="author" content="Gustavo José Pereira">
+
+    <title>Percentual de votos na eleição</title>
+
+</head>
+
+<body>
+
+    <script>
+        var validos = parseInt(prompt("Digite a quatidade de votos válidos da eleição: "));
+        var brancos = parseInt(prompt("Digite a quatidade de votos brancos da eleição: "));
+        var nulos = parseInt(prompt("Digite a quatidade de votos nulos da eleição: "));
+        var porcemtotal = (validos + brancos + nulos) / 100
+
+        alert("A eleição deve um total de " + (validos + brancos + nulos) + ". desses, " + validos / porcemtotal + "% votos foram válidos, " + brancos / porcemtotal + "% votos foram em branco, " + nulos / porcemtotal + "% votos foram nulos.");
+
+    </script>
+
+</body>
+
+</html>
