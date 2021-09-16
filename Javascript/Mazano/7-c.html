@@ -17,12 +17,11 @@
 <body>
 
     <script>
-        var altura = parseInt(prompt("Digite o valor da altura da lata: "));
-        var raio = (parseInt(prompt("Digite a largura da lata: "))) / 2;
+        var altura = parseFloat(prompt("Digite o valor da altura da lata: "));
+        var raio = (parseFloat(prompt("Digite a largura da lata: "))) / 2;
         
 
-        alert("O volume dessa lata de óleo é " + raio ^2 * altura * Math.PI + "m³.");
-
+        alert("O volume dessa lata de óleo é " + raio ** 2 * altura * Math.PI + "m³.");
     </script>
 
     <!-- Calcular e apresentar o valor do volume de uma lata de óleo, utilizando a fórmula:
