@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Exercício 32 da Apostila Mar2007">
+    <meta name="keywords" content="Javascript, Aula, mar2007">
+    <meta name="author" content="Gustavo José Pereira">
+
+    <title>Time vencedor</title>
+
+</head>
+
+<body>
+
+    <script>
+        var time1 = prompt("Digite o nome do primeiro time");
+        var pont1 = parseInt(prompt("Digite a pontuação desse time"));
+        var time2 = prompt("Digite o nome do segundo time");
+        var pont2 = parseInt(prompt("Digite a pontuação desse time"));
+
+        if (pont1 == pont2) {
+            alert("A partida terminou em empate");
+        } else if (pont1 > pont2) {
+            alert("Vencedor foi o time " + time1);
+        } else {
+            alert("Vencedor foi o time " + time2);
+        }
+    </script>
+
+    <!-- Ler 3 valores (A, B e C) representando as medidas dos lados de um triângulo e escrever se formam
+        ou não um triângulo. OBS: para formar um triângulo, o valor de cada lado deve ser menor que a soma
+        dos outros 2 lados.  -->
+
+</body>
+
+</html>
