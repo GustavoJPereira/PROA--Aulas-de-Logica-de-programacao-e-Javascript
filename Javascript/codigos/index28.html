@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
     <meta name="description" content="Exemplo do laço de repetição while">
     <meta name="Author" content="Gustavo José Pereira">
 
-    <title>Laços de Repetição em JavaScript while</title>
+    <title>Calculadora</title>
 </head>
 <body>
     <h1>While no JavaScript</h1>
@@ -17,9 +17,10 @@
     <script>
         var text = "";
         var contadora = 1;
+        var numero = parseInt(prompt("Digite o número e eu farei uma taboada;"));
 
-        while (contadora < 10) {
-            text += "<br> O número é: " + contadora;
+        while (contadora <= 10) {
+            text += "<br>" + numero + " + " + contadora + " = " + contadora * numero;
             document.getElementById('demo').innerHTML =  text;
             contadora ++;
         }
