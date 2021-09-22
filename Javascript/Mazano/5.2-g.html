@@ -18,24 +18,27 @@
 
     <script>
         var total = 0;
-        contador = 1;
+        var contador = 1;
+        var contador2;
         var valor;
 
         do {
             valor = 1;
 
-           if (contador % 2 == 0 ) {
+           if (contador % 2 != 0 ) {
+               contador2 = contador
                do {
                   valor = valor * contador2; 
                   contador2--;
                } while (contador2 >= 1)
+               
+               alert(valor);
            }
-
-           total += valor
+           
           contador ++; 
-        } while (contador >= 10)
+        } while (contador <= 10)
 
-        alert()
+       
     </script>
 
     <!--   Elaborar um programa que apresente como resultado o valor do fatorial dos valores ímpares
