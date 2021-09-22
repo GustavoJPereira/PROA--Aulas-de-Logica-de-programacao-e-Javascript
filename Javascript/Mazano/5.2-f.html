@@ -10,39 +10,38 @@
     <meta name="keywords" content="Javascript, Aula, Manzano">
     <meta name="author" content="Gustavo José Pereira">
 
-    <title>soma de 15 valores</title>
+    <title>Soma, media, total de valores positivos</title>
 
 </head>
 
 <body>
 
-    <p id="saida"></p>
     <script>
-        var contador = 1;
-        var contadorPassagem = 1;
         var total = 0;
+        var valoresLidos = 0;
         var valor;
 
         do {
-            valor = 1;
-            contador = parseInt(prompt("Digite um valor"));
+            valor = parseFloat(prompt("Digite o valor: "));
+            
+            if (valor >= 0) {
+                valoresLidos ++;
+                total += valor;
 
-            do {
-                valor = valor * contador;
+            }
+        } while (valor >= 0)
 
-                contador--;
-            } while (contador >= 1)
-
-            total += valor;
-
-            contadorPassagem++;
-        } while (contadorPassagem <= 15)
-
-        document.getElementById('saida').innerHTML = total;
+        alert("O total de valores digitados foi de " + valoresLidos +
+            "\n A soma de todos os valores é " + total +
+            "\n A média aritmétrica dos valores digitados é " + total / valoresLidos);
     </script>
 
-    <!--   Elaborar um programa que efetue a leitura de 15 valores numéricos inteiros e no final apresente o
-           total do somatório da fatorial de cada valor lido.    -->
+    <!--   Elaborar um programa que efetue a leitura sucessiva de valores numéricos e apresente no final o
+           total do somatório, a média aritmética e o total de valores lidos. O programa deve fazer as leituras
+           dos valores enquanto o usuário estiver fornecendo valores positivos. Ou seja, o programa deve
+           parar quando o usuário fornecer um valor negativo. Não se esqueça que o usuário pode entrar
+           como primeiro número um número negativo, portanto, cuidado com a divisão por zero no cálculo da
+           média.     -->
 
 </body>
 
